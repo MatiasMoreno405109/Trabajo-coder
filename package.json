@@ -1,0 +1,20 @@
+{
+  "name": "preentrega2-moreno",
+  "version": "1.0.0",
+  "description": "<h1 align=\"center\">Hi 👋, I'm Matías Moreno</h1>\r <h3 align=\"center\">A passionate frontend developer from Argentina</h3>",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MatiasMoreno405109/Trabajo-coder.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MatiasMoreno405109/Trabajo-coder/issues"
+  },
+  "homepage": "https://github.com/MatiasMoreno405109/Trabajo-coder#readme"
+}

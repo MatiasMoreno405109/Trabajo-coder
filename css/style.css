@@ -1,129 +1,49 @@
-body{
-    background-color: black;
+body {
+  background-color: black;
 }
-/*index img promoción*/
-.img-box img{
-    display: block;
-    margin: auto;
-    width: 50vw;
+body header nav .img-box img {
+  display: block;
+  margin: auto;
+  width: 80vw;
 }
-/*CSS DE PAGINA PRODUCTOS GRID*/
-.conteiner-grid{
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
-    width: 100%;
-    gap: 20px;
-    place-items: center;
-    margin: 50px 0px;
-    margin-top: 100px;
+body main section .conteiner-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  width: 100%;
+  gap: 20px;
+  place-items: center;
+  margin: 100px 0px 50px 0px;
 }
-/* CSS DE CARDS Y VALORACIONES 5 ESTRELLAS*/
-.card{
-    cursor: pointer;
-    transition: .4s;
+body main section .conteiner-grid .card {
+  cursor: pointer;
+  transition: 0.4s;
 }
-.card:hover{
-    transform: translate(0px, -10px);
+body main section .conteiner-grid .card:hover {
+  transform: translateY(-10px);
 }
-ul{
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+body main section .conteiner-grid .card .card-body {
+  text-align: center;
 }
-li{
-    padding-top: 10px;
+body main section .conteiner-grid .card .card-body ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.fa{
-    font-size: 25px;
-    transition: .4s;
-    margin-right: 15px;
+body main section .conteiner-grid .card .card-body ul li {
+  padding-top: 10px;
 }
-.checked{
-    color: yellow;
+body main section .conteiner-grid .card .card-body ul li .checked {
+  color: yellow;
+  font-size: 25px;
+  transition: 0.4s;
+  margin-right: 15px;
 }
-.button{
-    text-align: center;
-    font-size: 20px;
-    padding: 15px;
-    border-radius: 15px;
+body main section .conteiner-grid .card .card-body .button {
+  text-align: center;
+  font-size: 1.25rem;
+  padding: 15px;
+  border-radius: 15px;
 }
-.card-title{
-    text-align: center;
-}
-.card-text{
-    text-align: center;
-}
-/*PAGINA SUCURSALES*/
-/* GRID creo que si usaba nth-child seria lo mismo asique creé otra clase no se si está bien ya que repito código y solo quiero cambíar las columnas...*/ 
-.conteiner-grid-sucursales{
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    place-items: center;
-    width: 100%;
-    gap: 15px;
-    margin-top: 100px;
-}
-/*PÁGINA COMPRA*/
-.table img{
-    width: 10vw;
-}
-.btn:hover{
-    background-color:dodgerblue;
-}
-/*MEDIA QUERY PARA DISPOSITIVOS MOVILES*/
-@media (max-width: 600px){
-    /*IMAGEN DE INDEX*/
-    header img{
-        display: block;
-        margin: auto;
-    }
-    /*LOS LINKS*/
-    a{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 10px;
-    }
-    /*img de sección en indes*/
-    section img{
-        width: 70vw;
-    }
-    /*contenedor-grid de páginas productos*/
-    .conteiner-grid{
-        display: grid;
-        grid-template-columns: 1fr;
-        gap: 5px;
-    }
-    /*contenedor-grid de página sucursales*/
-    .conteiner-grid-sucursales{
-        display: grid;
-        grid-template-columns: 1fr;
-        gap: 5px;
-    }
-}
-/*MEDIA QUERY PARA TABLETS Y PANTALLAS MEDIANAS*/
-@media (min-width: 601px) and (max-width: 1023px){
-    /*contenedor-grid de páginas productos*/
-    .conteiner-grid{
-        display: grid;
-        grid-template-columns: repeat(2,1fr);
-        gap: 10px;
-    }
-    /*contenedor-grid de página sucursales*/
-    .conteiner-grid-sucursales{
-        display: grid;
-        grid-template-columns: repeat(2,1fr);
-        gap: 10px;
-    }
-}
-/*MEDIA QUERY PARA PANTALLAS GRANDES*/
-@media(min-width:1024px) and (max-width:1213px){
-    /*en esta query la PAGINA PRODUCTOS se desacomoda por las medidas distintas de las img :/ */
-    /*contenedor-grid de páginas productos*/
-    .conteiner-grid{
-        display: grid;
-        grid-template-columns: repeat(3,1fr);
-        gap: 10px;
-    }
-}
+
+/*# sourceMappingURL=style.css.map */
