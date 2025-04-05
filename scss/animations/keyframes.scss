@@ -1,0 +1,11 @@
+//KAYFRAMES PARA ANIMACIÓNES
+
+//KEYFRAME para el header (barra de msj promocional)
+@keyframes scroll{
+    from{
+        transform: translateX(100%);
+    }
+    to{
+        transform: translate(-100%);
+    }
+}
