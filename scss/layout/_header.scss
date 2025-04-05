@@ -1,0 +1,36 @@
+//HEADER PARA LAS PÁGINAS
+//ANIMACIÓN
+@use "../animations/keyframes";
+@use "../base/base" as b;
+//CONTENEDOR DEL BUSCADOR, EL LOGO Y LOS ICONOS
+header{
+    background-color: b.$primary-color;
+    .container-fluid{
+        .marquee {
+            width: 100%;
+            overflow: hidden;
+            white-space: nowrap;
+            background-color: b.$tertiary-color;
+            color: b.$text-color;
+            font-weight: bold;
+            padding: 10px;
+
+            .marquee-text {
+                display: inline-block;
+                animation: scroll 10s linear infinite;
+            }
+        }
+
+        //NAV DE BOOSTRAP
+        .row {
+            a {
+                color: b.$text-color;
+            }
+
+            //.img-fluid modo de prueba
+            a img {
+                width: 13.5rem;
+            }
+        }
+    }
+}

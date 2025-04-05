@@ -1,3 +1,95 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+body {
+  line-height: 1;
+  font-family: sans-serif;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translate(-100%);
+  }
+}
+header {
+  background-color: #123458;
+}
+header .container-fluid .marquee {
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  background-color: #030303;
+  color: #D4C9BE;
+  font-weight: bold;
+  padding: 10px;
+}
+header .container-fluid .marquee .marquee-text {
+  display: inline-block;
+  animation: scroll 10s linear infinite;
+}
+header .container-fluid .row a {
+  color: #D4C9BE;
+}
+header .container-fluid .row a img {
+  width: 13.5rem;
+}
+
+footer {
+  background-color: #DDA853;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+}
+footer .text-white .container form {
+  display: flex;
+  justify-content: center;
+}
+footer .text-white .container form input {
+  width: 50%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+}
+footer .text-white .container form button {
+  border: none;
+  padding: 10px 20px;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+}
+footer .text-white .container .social-icons .img-redes {
+  width: 2rem;
+  margin: 0 10px;
+  transition: transform 0.3s ease;
+}
+footer .text-white .container .social-icons .img-redes:hover {
+  transform: scale(1.1);
+}
+footer .text-white .container .payment-methods h5 {
+  margin-bottom: 10px;
+}
+footer .text-white .container .payment-methods .d-flex {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+footer .text-white .container .payment-methods .d-flex img {
+  width: 3rem;
+}
 
 /*# sourceMappingURL=main.css.map */

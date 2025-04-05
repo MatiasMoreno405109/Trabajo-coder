@@ -1,0 +1,7 @@
+//CONFIGURACIÓNES GENERALES
+@use "base/base" as b;
+//LAYOUTS GENERALES
+@use "layout/header";
+@use "layout/footer";
+//PÁGINAS ESPECÍFICAS
+@use "pages/index";

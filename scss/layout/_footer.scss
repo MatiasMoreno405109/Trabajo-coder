@@ -1,6 +1,7 @@
 //FOOTER SCSS
+@use "../base/base" as b;
 footer {
-    background-color: $secondary-color;
+    background-color: b.$secondary-color;
     color: white;
     text-align: center;
     padding: 20px 0;
