@@ -1,0 +1,6 @@
+@mixin container($columns, $rows){
+    display: grid;
+    grid-template-columns: repeat($columns,$rows);
+    place-items: center;
+    width: 100%;
+}

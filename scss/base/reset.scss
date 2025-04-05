@@ -1,0 +1,19 @@
+//RESET SCSS DEJAMOS LOS VALORES EN LIMPIO(0) POR LOS DISNTINTOS NAVEGADORES YA QUE CADA UNO CONTIENEN SUS VALORES PREDETERMINADO ASI NOS AHORRAMOS QUE HAYA ALGO DEFORME EN CUALQUIER NAVEGADOR. 
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    line-height: 1;
+    font-family: sans-serif;
+}
+ul, ol{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
