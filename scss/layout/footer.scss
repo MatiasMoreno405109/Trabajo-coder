@@ -1,0 +1,63 @@
+//FOOTER SCSS
+footer {
+    background-color: $secondary-color;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+
+    .text-white {
+        .container {
+            form {
+                display: flex;
+                justify-content: center;
+
+                input {
+                    width: 50%;
+                    padding: 10px;
+                    border: none;
+                    border-radius: 5px;
+                }
+
+                //BOTON DE SUSCRIBIRME
+                button {
+                    border: none;
+                    padding: 10px 20px;
+                    color: white;
+                    cursor: pointer;
+                    border-radius: 5px;
+                }
+            }
+
+            //REDES SOCIALES
+            .social-icons {
+                .img-redes {
+                    width: 2rem;
+                    margin: 0 10px;
+                    transition: transform 0.3s ease;
+
+                    &:hover {
+                        transform: scale(1.1);
+                    }
+                }
+            }
+
+            //FORMAS DE PAGO
+            .payment-methods {
+                h5 {
+                    margin-bottom: 10px;
+                }
+
+                //mirar si funcióna bien
+                .d-flex {
+                    display: flex;
+                    justify-content: center;
+                    gap: 15px;
+
+                    img {
+                        width: 3rem;
+                    }
+                }
+            }
+        }
+    }
+}
