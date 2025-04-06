@@ -2,11 +2,13 @@
 
 @mixin container($columns, $col-size, $rows:null, $rows-size:null){
     display: grid;
-    grid-template-columns: repeat($columns,$size);
+    grid-template-columns: repeat($columns,$col-size);
     //CONDICIÓN SI UTILIZO FILAS
     @if $rows != null and $rows-size != null{
         grid-template-rows: repeat($rows,$rows-size);
     }
     place-items: center;
+    gap:20px;
+    margin-top: 50px;
     width: 100%;
 }
