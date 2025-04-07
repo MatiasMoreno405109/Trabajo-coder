@@ -1,0 +1,54 @@
+//PÁGINA PRODUCTOS
+@use "../base/mixins" as m;
+@use "../base/variables" as v;
+
+.conteiner-grid {
+    //CONTENEDOR DE PRODUCTOS 
+    @include m.container(4, 1fr);
+    //CARDS Y VALORACIONES 5 ESTRELLAS
+    .card {
+        cursor: pointer;
+        transition: .4s;
+
+        &:hover {
+            transform: translate(0px, -10px);
+        }
+
+        .card-body {
+            ul {
+                list-style: none;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                li {
+                    padding-top: 10px;
+
+                    .fa {
+                        //no uso la variable porque la estrella es un poco más grande
+                        font-size: 25px;
+                        transition: .4s;
+                        margin-right: 15px;
+                    }
+
+                    .checked {
+                        color: yellow;
+                    }
+
+                    //BOTON DE COMPRA
+                    .button {
+                        text-align: center;
+                        font-size: v.$size-font;
+                        padding: 15px;
+                        border-radius: 15px;
+                    }
+                }
+            }
+
+            .card-title,
+            .card-text {
+                text-align: center;
+            }
+        }
+    }
+}
