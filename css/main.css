@@ -218,4 +218,17 @@ main .container-grid-link .img-con-link .link-img:hover {
   width: 100%;
 }
 
+.table img {
+  width: 8rem;
+}
+
+.btn {
+  padding: 10px;
+  margin-top: 5px;
+}
+
+.btn:hover {
+  background-color: dodgerblue;
+}
+
 /*# sourceMappingURL=main.css.map */
