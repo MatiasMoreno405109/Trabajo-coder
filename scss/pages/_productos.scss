@@ -2,7 +2,7 @@
 @use "../base/mixins" as m;
 @use "../base/variables" as v;
 
-.conteiner-grid {
+.container-grid {
     //CONTENEDOR DE PRODUCTOS 
     @include m.container(4, 1fr);
     //CARDS Y VALORACIONES 5 ESTRELLAS

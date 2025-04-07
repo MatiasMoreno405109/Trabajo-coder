@@ -1,0 +1,6 @@
+//PÁGINA SUCURSALES
+@use "../base/mixins" as m;
+
+.container-grid-sucursales{
+    @include m.container(3,1fr)
+}
