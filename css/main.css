@@ -29,6 +29,13 @@ a {
 header {
   background-color: #123458;
 }
+header .container-fluid .navbar-toggler {
+  padding: 0.75rem;
+  font-size: 1.5rem;
+}
+header .container-fluid .navbar-toggler i {
+  font-size: 1.5rem;
+}
 header .container-fluid .marquee {
   width: 100%;
   overflow: hidden;
@@ -42,10 +49,7 @@ header .container-fluid .marquee .marquee-text {
   display: inline-block;
   animation: scroll 10s linear infinite;
 }
-header .container-fluid .row a {
-  color: #D4C9BE;
-}
-header .container-fluid .row a img {
+header .container-fluid a img {
   width: 13.5rem;
 }
 
@@ -89,7 +93,7 @@ footer .text-white .container .payment-methods .d-flex {
   gap: 15px;
 }
 footer .text-white .container .payment-methods .d-flex img {
-  width: 3rem;
+  width: 2rem;
 }
 
 main {
