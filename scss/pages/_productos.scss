@@ -5,6 +5,7 @@
 .container-grid {
     //CONTENEDOR DE PRODUCTOS 
     @include m.container(4, 1fr);
+
     //CARDS Y VALORACIONES 5 ESTRELLAS
     .card {
         cursor: pointer;
