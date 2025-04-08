@@ -1,3 +1,4 @@
+@use "./extend" as *;
 //MIXIN PARA CONTAINERS
 
 @mixin container($columns, $col-size, $rows: null, $rows-size: null) {
@@ -8,10 +9,9 @@
     @if $rows !=null and $rows-size !=null {
         grid-template-rows: repeat($rows, $rows-size);
     }
-
+    //EXTEND APLICADO
     place-items: center;
-    gap:20px;
-    margin-top: 50px;
+    @extend %margin-box;
     width: 100%;
     //MEDIA QUERY PARA MOVILES
     @media screen and (max-width:600px){
