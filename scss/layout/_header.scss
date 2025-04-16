@@ -19,18 +19,26 @@ header {
             overflow: hidden;
             white-space: nowrap;
             background-color: b.$tertiary-color;
-            color: b.$text-color;
             font-weight: bold;
             padding: 10px;
 
             .marquee-text {
                 display: inline-block;
+                margin: 0;
+                color: b.$a-color;
                 animation: scroll 10s linear infinite;
             }
         }
-        //.img-fluid modo de prueba
-        a img {
-            width: 13.5rem;
+        //.img-fluid- LINKS DE INICIAR SESIÓN Y CARRITO
+        a {
+            color: b.$a-color;
+            &:hover,&:focus{
+                opacity: 0.7;
+                transition: opacity 0.3s ease;
+            }
+           & img{
+                width: 13.5rem;
+           }
         }
     }
 }

@@ -46,13 +46,21 @@ header .container-fluid .marquee {
   overflow: hidden;
   white-space: nowrap;
   background-color: #030303;
-  color: #D4C9BE;
   font-weight: bold;
   padding: 10px;
 }
 header .container-fluid .marquee .marquee-text {
   display: inline-block;
+  margin: 0;
+  color: white;
   animation: scroll 10s linear infinite;
+}
+header .container-fluid a {
+  color: white;
+}
+header .container-fluid a:hover, header .container-fluid a:focus {
+  opacity: 0.7;
+  transition: opacity 0.3s ease;
 }
 header .container-fluid a img {
   width: 13.5rem;
@@ -142,7 +150,7 @@ main .grid-container .imagen {
   object-fit: cover;
 }
 main .grid-container .grid-item {
-  font-family: "Playfair Display", serif;
+  font-family: "Roboto", serif;
   size: 16px;
 }
 main .container-grid-link {
