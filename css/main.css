@@ -127,9 +127,16 @@ footer .text-white .container .payment-methods .d-flex img {
 main {
   background-color: #D8D2C2;
 }
+main .titulo-principal {
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 3rem;
+  font-weight: 700;
+  color: #333;
+  padding-top: 20px;
+}
 main .container-fluid {
   gap: 10px;
-  margin-top: 50px;
 }
 main .container-fluid .img-carrusel {
   display: block;
@@ -167,8 +174,8 @@ main .grid-container {
   align-items: center;
 }
 main .grid-container .grid-item {
-  font-family: "Roboto", serif;
-  size: 16px;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5rem;
 }
 main .container-grid-link {
   display: grid;

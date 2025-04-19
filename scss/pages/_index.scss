@@ -3,11 +3,18 @@
 @use "../base/variables" as v;
 //CONTAINER GRID CARRUSEL
 main{
+    .titulo-principal {
+        text-align: center;
+        font-family: "Roboto", sans-serif;
+        font-size: 3rem;
+        font-weight: 700;
+        color: #333;
+        padding-top: 20px;
+    }
     //cambiar este valor por una variable
     background-color: #D8D2C2;
     .container-fluid{
         gap: 10px;
-        margin-top: 50px;
         .img-carrusel{
             //REVISAR SI PUEDO APLICAR MIXINS
             display: block;
@@ -31,8 +38,8 @@ main{
             align-items: center;
         }
         .grid-item{
-            font-family: v.$main-font;
-            size: v.$size-font;
+            font-family: "Roboto",sans-serif;
+            font-size: 1.5rem;
         }   
     }
     .container-grid-link{
