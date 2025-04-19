@@ -18,7 +18,7 @@ a {
   color: inherit;
 }
 
-.container-grid-sucursales, .container-grid, main .grid-container, main .container-grid-link {
+.compra .container-compra .container-cards, .container-grid-sucursales, .container-grid, main .grid-container, main .container-grid-link {
   margin-top: 50px;
   gap: 20px;
 }
@@ -129,7 +129,6 @@ main .grid-container {
   grid-template-rows: repeat(6, 1fr);
   place-items: center;
   width: 100%;
-  align-items: center;
 }
 @media screen and (max-width: 600px) {
   main .grid-container {
@@ -148,6 +147,9 @@ main .grid-container .imagen {
   width: 100%;
   height: auto;
   object-fit: cover;
+}
+main .grid-container {
+  align-items: center;
 }
 main .grid-container .grid-item {
   font-family: "Roboto", serif;
@@ -271,17 +273,105 @@ main .container-grid-link .img-con-link .link-img:hover {
   }
 }
 
-.table img {
-  width: 8rem;
+.compra {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins" sans-serif;
 }
-
-.btn {
-  padding: 10px;
+.compra .container-compra {
+  max-width: 1200px;
+  text-align: center;
+  margin: 0 auto;
+  padding: 40px 20px;
+  background-color: #1f242d;
+}
+.compra .container-compra h1 {
+  color: #fff;
+}
+.compra .container-compra .container-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  place-items: center;
+  width: 100%;
+}
+@media screen and (max-width: 600px) {
+  .compra .container-compra .container-cards {
+    grid-template-columns: 1fr;
+    gap: 5px;
+  }
+}
+@media screen and (min-width: 601px) and (max-width: 1023px) {
+  .compra .container-compra .container-cards {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+}
+.compra .container-compra .container-cards img {
+  width: 100%;
+  border-radius: 10px;
+}
+.compra .container-compra .container-form {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+.compra .container-compra .container-form form {
+  width: 700px;
+  padding: 40px;
+  background-color: #fff;
+  border-radius: 10px;
+}
+.compra .container-compra .container-form .row {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+.compra .container-compra .container-form .row .column {
+  flex: 1 1 250px;
+}
+.compra .container-compra .container-form .row .column .flex {
+  display: flex;
+  gap: 15px;
+}
+.compra .container-compra .container-form .row .column .flex .input-box {
   margin-top: 5px;
 }
-
-.btn:hover {
-  background-color: dodgerblue;
+.compra .container-compra .container-form .row .column .title {
+  font-size: 20px;
+  color: #333;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+.compra .container-compra .container-form .row .column .input-box {
+  margin: 15px 0;
+}
+.compra .container-compra .container-form .row .column .input-box input {
+  width: 100%;
+  padding: 10px 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 15px;
+}
+.compra .container-compra .container-form .row .column .input-box .span {
+  display: block;
+  margin-bottom: 10px;
+}
+.compra .container-compra .container-form .btn {
+  width: 100%;
+  padding: 12px;
+  background-color: #8175d3;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  font-size: 15px;
+  color: #fff;
+  margin-top: 5px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.compra .container-compra .container-form .btn:hover {
+  background-color: #6a5acd;
 }
 
 /*# sourceMappingURL=main.css.map */

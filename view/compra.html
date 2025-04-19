@@ -2,233 +2,262 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>COMPRA</title>
-  <!-- BOOSTRAP CSS !-->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-  <!--LINK PARA LAS FORMAS DE PAGO-->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-  <!--LINK LETRAS-->
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
-  <!--link de iconos para el header-->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-  <!-- CSS -->
-  <link rel="stylesheet" href="../css/main.css">
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COMPRA</title>
+    <!-- BOOSTRAP CSS !-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!--Link de valoraciones-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--LINK LETRAS-->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <!--link de iconos para el header-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/main.css">
 </head>
 
 <body>
-  <!-- MENU -->
-  <header>
-    <section class="container-fluid py-3">
-      <div class="marquee">
-        <p class="marquee-text">🔥 20% OFF en toda la tienda - Envío GRATIS en compras mayores a $50.000
-          🔥</p>
-      </div>
-      <!--NAV CON GRID BOOSTRAP-->
-      <div class="row align-items-center">
-        <div class="col-4 d-flex">
-          <!--MENU HAMBURGUESA SOLO PARA MOVILES DE BOOSTRAP-->
-          <nav class="d-md-none">
-            <div class="container-fluid justify-content-start">
-              <button class="navbar-toggler d-md-none me-auto" type="button" data-bs-toggle="offcanvas"
-                data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar"
-                aria-label="Cambiar navegación">
-                <i class="fa fa-bars text-white"></i>
-              </button>
-          </nav>
-          <div class="offcanvas offcanvas-end text-bg-dark d-md-none" tabindex="-1" id="offcanvasDarkNavbar"
-            aria-labelledby="offcanvasDarkNavbarLabel">
-            <div class="offcanvas-header">
-              <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">
-                <h5 style="vertical-align: inherit;">
-                  <h5 style="vertical-align: inherit;">PANTHER</h5>
-                </h5>
-              </h5>
-              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
-                aria-label="Cerca"></button>
+    <header>
+        <section class="container-fluid py-3">
+            <div class="marquee">
+                <p class="marquee-text">🔥 20% OFF en toda la tienda - Envío GRATIS en compras mayores a $50.000
+                    🔥</p>
             </div>
-            <div class="offcanvas-body">
-              <ul class="navbar-nav flex-column text-center">
-                <li class="nav-item"><a class="nav-link" href="../index.html">INICIO</a></li>
-                <li class="nav-item"><a class="nav-link" href="./nosotros.html">NOSOTROS</a></li>
-                <li class="nav-item"><a class="nav-link" href="./productos.html">PRODUCTOS</a></li>
-                <li class="nav-item"><a class="nav-link" href="./sucursales.html">SUCURSALES</a></li>
-              </ul>
-              <form class="d-flex mt-3" role="search">
-                <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar">
-                <button class="btn btn-success" type="submit">
-                  <h5 style="vertical-align: inherit;">
-                    <h5 style="vertical-align: inherit;">Buscar</h5>
-                  </h5>
-                </button>
-              </form>
-            </div>
-          </div>
-          <input type="text" class="form-control d-none d-md-block" placeholder="Buscar productos...">
-        </div>
-        <!-- LOGO PANTHER-->
-        <div class="col-4 text-center">
-          <a href="index.html">
-            <img src="../img/logo-panther.png" alt="logo-panther" class="img-fluid">
-          </a>
-        </div>
-        <!--ICONOS DE INICIAR SESIÓN Y COMPRA-->
-        <div class="col-4 d-flex justify-content-end">
-          <a href="#" class="me-3">
-            <i class="fa fa-user" style="font-size: 24px;"></i>
-            <span class="d-none d-md-inline">INICIAR SESIÓN</span>
-          </a>
-          <a href="#" class="me-3">
-            <i class="fa fa-shopping-bag" style="font-size: 24px;"></i>
-            <span class="d-none d-md-inline">CARRITO</span>
-          </a>
-        </div>
-        <!--BUSCADOR ACOMODADO PARA PANTALLAS MÁS CHICAS-->
-        <div class="row mt-3 d-md-none">
-          <div class="col-12">
-            <input type="text" class="form-control" placeholder="Buscar productos...">
-          </div>
-        </div>
-      </div>
-      <!--MENU DESKTOP-->
-      <nav class="d-none d-md-flex justify-content-center my-3" id="mainNav">
-        <ul class="nav">
-          <li class="nav-item"><a href="../index.html" class="nav-link">INICIO</a></li>
-          <li class="nav-item"><a href="./nosotros.html" class="nav-link">NOSOTROS</a></li>
-          <li class="nav-item"><a href="./productos.html" class="nav-link">PRODUCTOS</a></li>
-          <li class="nav-item"><a href="./sucursales.html" class="nav-link">SUCURSALES</a></li>
-        </ul>
-      </nav>
-    </section>
-  </header>
-  <!--TABLA COMPRA-->
-  <main>
-    <section>
-      <!--CONTEINER DE COMPRA-->
-      <div class="container-grid-compra">
-        <div>
-          <!--TABLA RESPONSIVA-->
-          <div class="table-responsive">
-            <table class="table text-center">
-              <thead>
-                <tr>
-                  <th class="p-5" scope="col">Producto:</th>
-                  <th scope="col"><img src="../img/perfume-1.webp" alt="perfume"></th>
-                  <th class="p-5" scope="col">CANTIDAD - 1 +</th>
-                </tr>
-              </thead>
-              <thead>
-                <tr>
-                  <th class="p-5" scope="col">Envio a domicilio</th>
-                  <th></th> <!--LO AGREGUE PORQUE SI NO NO CUBRE TODA LA TABLA-->
-                  <th class="p-5" scope="col">Precio $40.000,00</th>
-                </tr>
-              </thead>
-              <thead>
-                <tr>
-                  <th class="p-5" scope="col">Forma de pago <i class="fa-brands fa-cc-mastercard"></i>
-                    <i class="fa-brands fa-cc-visa"></i>
-                    <i class="fa-solid fa-dollar-sign"></i>
-                  </th>
-                  <th></th>
-                  <th class="p-5" scope="col">Sub total $40.000,00</th>
-                </tr>
-              </thead>
-              <thead>
-                <!--ENVIAR COMENTARIO-->
-                <tr>
-                  <th class="p-5" scope="col"><button type="button" class="btn btn-primary" data-bs-toggle="modal"
-                      data-bs-target="#exampleModal" data-bs-whatever="@fat">Hacer un comentario</button></th>
-                  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
-                    aria-hidden="true">
-                    <div class="modal-dialog">
-                      <div class="modal-content">
-                        <div class="modal-header">
-                          <h1 class="modal-title fs-5" id="exampleModalLabel">Nuevo comentario</h1>
-                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            <!--NAV CON GRID BOOSTRAP-->
+            <div class="row align-items-center">
+                <div class="col-4 d-flex">
+                    <!--MENU HAMBURGUESA SOLO PARA MOVILES DE BOOSTRAP-->
+                    <nav class="d-md-none">
+                        <div class="container-fluid justify-content-start">
+                            <button class="navbar-toggler d-md-none me-auto" type="button" data-bs-toggle="offcanvas"
+                                data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar"
+                                aria-label="Cambiar navegación">
+                                <i class="fa fa-bars text-white"></i>
+                            </button>
+                    </nav>
+                    <div class="offcanvas offcanvas-end text-bg-dark d-md-none" tabindex="-1" id="offcanvasDarkNavbar"
+                        aria-labelledby="offcanvasDarkNavbarLabel">
+                        <div class="offcanvas-header">
+                            <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">
+                                <h5 style="vertical-align: inherit;">
+                                    <h5 style="vertical-align: inherit;">PANTHER</h5>
+                                </h5>
+                            </h5>
+                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                                aria-label="Cerca"></button>
                         </div>
-                        <div class="modal-body">
-                          <form>
-                            <div class="mb-3">
-                              <label for="recipient-name" class="col-form-label">Correo:</label>
-                              <input type="text" class="form-control" id="recipient-name">
-                            </div>
-                            <div class="mb-3">
-                              <label for="message-text" class="col-form-label">Mensaje:</label>
-                              <textarea class="form-control" id="message-text"></textarea>
-                            </div>
-                          </form>
+                        <div class="offcanvas-body">
+                            <ul class="navbar-nav flex-column text-center">
+                                <li class="nav-item"><a class="nav-link" href="../index.html">INICIO</a></li>
+                                <li class="nav-item"><a class="nav-link" href="./nosotros.html">NOSOTROS</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#">PRODUCTOS</a></li>
+                                <li class="nav-item"><a class="nav-link" href="./sucursales.html">SUCURSALES</a></li>
+                            </ul>
+                            <form class="d-flex mt-3" role="search">
+                                <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar">
+                                <button class="btn btn-success" type="submit">
+                                    <h5 style="vertical-align: inherit;">
+                                        <h5 style="vertical-align: inherit;">Buscar</h5>
+                                    </h5>
+                                </button>
+                            </form>
                         </div>
-                        <div class="modal-footer">
-                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                          <button type="button" class="btn btn-primary">Enviar mensaje</button>
-                        </div>
-                      </div>
                     </div>
-                  </div>
-                  <th></th> <!--LO AGREGUE PORQUE SI NO NO CUBRE TODA LA TABLA-->
-                  <th></th> <!--LO AGREGUE PORQUE SI NO NO CUBRE TODA LA TABLA-->
-                </tr>
-              </thead>
-              <thead>
-                <tr>
-                  <th></th><!--LO AGREGUE PORQUE SI NO NO CUBRE TODA LA TABLA-->
-                  <th scope="col"><button type="button" class="btn btn-primary">Aceptar</button>
-                    <div class="button"><a href="./productos.html" class="btn btn-primary">Seguir comprando</a></div>
-                  </th>
-                  <th></th><!--LO AGREGUE PORQUE SI NO NO CUBRE TODA LA TABLA-->
-                </tr>
-              </thead>
-            </table>
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
-  <!--REDES, FORMAS DE PAGO Y NEWSLETTER-->
-  <footer>
-    <section class="text-white py-4">
-      <!--SUSCRIBETE A NEWSLETTER Y DIV PADRE-->
-      <div class="container text-center">
-        <h4>Suscríbete a nuestro Newsletter</h4>
-        <p>Recibe ofertas exclusivas y las últimas novedades en tu correo.</p>
-        <form class="d-flex justify-content-center">
-          <input type="email" class="form-control w-50 me-2" placeholder="Tu correo electrónico" required>
-          <button type="submit" class="btn btn-primary">Suscribirme</button>
-        </form>
-        <!--REDES SOCIALES-->
-        <div class="social-icons mt-3">
-          <a href="https://www.facebook.com/pantherbrand.pe?locale=cy_GB" class="me-3"><img
-              src="../img/facebook-3-2.svg" alt="Facebook" class="img-redes"></a>
-          <a href="#"><img src="../img/x-2.svg" alt="Twitter" class="img-redes"></a> <!--No encontre link-->
-          <a href="https://www.instagram.com/pantheroficial_/"><img src="../img/instagram-2016-5.svg" alt="Instagram"
-              class="img-redes"></a>
-        </div>
-        <!--MÉTODOS DE PAGO-->
-        <div class="payment-methods mt-4">
-          <h5>Métodos de pago</h5>
-          <div class="d-flex justify-content-center">
-            <img src="../img/visa-5.svg" alt="Visa">
-            <img src="../img/mastercard-modern-design-.svg" alt="Mastercard">
-            <img src="../img/paypal-3.svg" alt="Paypal">
-            <img src="../img/mercadopago-financiera.svg" alt="Mercado pago">
-            <img src="../img/american-express-1.svg" alt="American express">
-            <img src="../img/naranja-x-1.svg" alt="Naranja x">
-            <img src="../img/pago-facil.png" alt="Pago facil">
-          </div>
-        </div>
-        <!--COPYRIGTH-->
-        <p class="mt-3 mb-0">&copy; 2024 PANTHER - Todos los derechos reservados.</p>
-      </div>
-    </section>
-  </footer>
-  <!-- LINK JAVA-->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-    crossorigin="anonymous"></script>
+                    <input type="text" class="form-control d-none d-md-block" placeholder="Buscar productos...">
+                </div>
+                <!-- LOGO PANTHER-->
+                <div class="col-4 text-center">
+                    <a href="index.html">
+                        <img src="../img/logo-panther.png" alt="logo-panther" class="img-fluid">
+                    </a>
+                </div>
+                <!--ICONOS DE INICIAR SESIÓN Y COMPRA-->
+                <div class="col-4 d-flex justify-content-end">
+                    <a href="#" class="me-3">
+                        <i class="fa fa-user" style="font-size: 24px;"></i>
+                        <span class="d-none d-lg-inline">INICIAR SESIÓN</span>
+                    </a>
+                    <a href="./compra.html" class="me-3">
+                        <i class="fa fa-shopping-bag" style="font-size: 24px;"></i>
+                        <span class="d-none d-lg-inline">CARRITO</span>
+                    </a>
+                </div>
+                <!--BUSCADOR ACOMODADO PARA PANTALLAS MÁS CHICAS-->
+                <div class="row mt-3 d-md-none">
+                    <div class="col-12">
+                        <input type="text" class="form-control" placeholder="Buscar productos...">
+                    </div>
+                </div>
+            </div>
+            <!--MENU DESKTOP-->
+            <nav class="d-none d-md-flex justify-content-center my-3" id="mainNav">
+                <ul class="nav">
+                    <li class="nav-item"><a href="../index.html" class="nav-link">INICIO</a></li>
+                    <li class="nav-item"><a href="./nosotros.html" class="nav-link">NOSOTROS</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">PRODUCTOS</a></li>
+                    <li class="nav-item"><a href="./sucursales.html" class="nav-link">SUCURSALES</a></li>
+                </ul>
+            </nav>
+        </section>
+    </header>
+    <main>
+        <section class="compra">
+            <!--CONTENEDOR GENERAL-->
+            <div class="container-compra">
+                <h1>PRODUCTOS SELECCIONADOS</h1>
+                <!--CONTENEDOR DE LAS CARDS-->
+                <div class="container-cards">
+                    <div class="card" style="width: 18rem;">
+                        <img src="../img/buso-negro.jpg" class="card-img-top" alt="img buso-negro">
+                        <div class="card-body">
+                            <h5 class="card-title">Buso</h5>
+                            <p class="card-text">Buso NEW YORK modelo 2023</p>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">Cantidad = 1</li>
+                                <li class="list-group-item">Precio = $28.000,99</li>
+                                <li class="list-group-item">Total = $28.000,99</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                        <img src="../img/buso-hombre.jpg" class="card-img-top" alt="img buso">
+                        <div class="card-body">
+                            <h5 class="card-title">Buso</h5>
+                            <p class="card-text">Buso con capucha modelo 2024</p>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">Cantidad = 2</li>
+                                <li class="list-group-item">Precio = $32.000,00</li>
+                                <li class="list-group-item">Total = $64.000,00</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                        <img src="../img/jean-cargo.jpg" class="card-img-top" alt="img jean cargo">
+                        <div class="card-body">
+                            <h5 class="card-title">Jeans</h5>
+                            <p class="card-text">Jeans Cargos modelo 2024</p>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">Cantidad = 1</li>
+                                <li class="list-group-item">Precio = $28.050,99</li>
+                                <li class="list-group-item">Total = $28.050,99</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="container-form">
+                    <form>
+                        <div class="row">
+                            <div class="column">
+                                <h3 class="title">Dirección de Envio</h3>
+                                <div class="input-box">
+                                    <span>Nombre Completo :</span>
+                                    <input type="text" placeholder="Nombre Completo">
+                                </div>
+                                <div class="input-box">
+                                    <span>Email :</span>
+                                    <input type="text" placeholder="ejemplo@gmail.com">
+                                </div>
+                                <div class="input-box">
+                                    <span>Dirección :</span>
+                                    <input type="text" placeholder="Dpto - Calle - Localidad">
+                                </div>
+                                <div class="input-box">
+                                    <span>Ciudad :</span>
+                                    <input type="text" placeholder="Córdoba">
+                                </div>
+                                <div class="flex">
+                                    <div class="input-box">
+                                        <span>País :</span>
+                                        <input type="text" placeholder="Argentina">
+                                    </div>
+                                    <div class="input-box">
+                                        <span>Código postal :</span>
+                                        <input type="number" placeholder="5000">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="column">
+                                <h3 class="title">Método de pago</h3>
+                                <div class="input-box">
+                                    <span>Tarjetas aceptadas :</span>
+                                    <!--AGREGAR IMG-->
+                                    <img src="../img/imgcards.png" alt="tarjetas">
+                                </div>
+                                <div class="input-box">
+                                    <span>Nombre de la tarjeta :</span>
+                                    <input type="text" placeholder="JUAN RICARDO PEREZ">
+                                </div>
+                                <div class="input-box">
+                                    <span>Número de tarjeta :</span>
+                                    <input type="number" placeholder="1111 2222 3333 4444">
+                                </div>
+                                <div class="input-box">
+                                    <span>Mes de vencimiento :</span>
+                                    <input type="text" placeholder="Diciembre">
+                                </div>
+                                <div class="flex">
+                                    <div class="input-box">
+                                        <span>Año de vencimiento :</span>
+                                        <input type="number" placeholder="2030">
+                                    </div>
+                                    <div class="input-box">
+                                        <span>CVV :</span>
+                                        <input type="number" placeholder="123">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn">Aceptar</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <section class="text-white py-4">
+            <!--SUSCRIBETE A NEWSLETTER Y DIV PADRE-->
+            <div class="container text-center">
+                <h4>Suscríbete a nuestro Newsletter</h4>
+                <p>Recibe ofertas exclusivas y las últimas novedades en tu correo.</p>
+                <form class="d-flex justify-content-center">
+                    <input type="email" class="form-control w-50 me-2" placeholder="Tu correo electrónico" required>
+                    <button type="submit" class="btn btn-primary">Suscribirme</button>
+                </form>
+                <!--REDES SOCIALES-->
+                <div class="social-icons mt-3">
+                    <a href="https://www.facebook.com/pantherbrand.pe?locale=cy_GB" class="me-3"><img
+                            src="../img/facebook-3-2.svg" alt="Facebook" class="img-redes"></a>
+                    <a href="#"><img src="../img/x-2.svg" alt="Twitter" class="img-redes"></a> <!--No encontre link-->
+                    <a href="https://www.instagram.com/pantheroficial_/"><img src="../img/instagram-2016-5.svg"
+                            alt="Instagram" class="img-redes"></a>
+                </div>
+                <!--MÉTODOS DE PAGO-->
+                <div class="payment-methods mt-4">
+                    <h5>Métodos de pago</h5>
+                    <div class="d-flex justify-content-center">
+                        <img src="../img/visa-5.svg" alt="Visa">
+                        <img src="../img/mastercard-modern-design-.svg" alt="Mastercard">
+                        <img src="../img/paypal-3.svg" alt="Paypal">
+                        <img src="../img/mercadopago-financiera.svg" alt="Mercado pago">
+                        <img src="../img/american-express-1.svg" alt="American express">
+                        <img src="../img/naranja-x-1.svg" alt="Naranja x">
+                        <img src="../img/pago-facil.png" alt="Pago facil">
+                    </div>
+                </div>
+                <!--COPYRIGTH-->
+                <p class="mt-3 mb-0">&copy; 2024 PANTHER - Todos los derechos reservados.</p>
+            </div>
+        </section>
+    </footer>
+    <!-- LINK JAVA-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
