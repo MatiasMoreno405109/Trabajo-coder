@@ -6,22 +6,16 @@ main{
     .titulo-principal {
         text-align: center;
         font-family: "Roboto", sans-serif;
-        font-size: 3rem;
+        font-size: v.$size-title;
         font-weight: 700;
-        color: #333;
+        color: v.$title-color;
         padding-top: 20px;
     }
-    //cambiar este valor por una variable
-    background-color: #D8D2C2;
+    background-color: v.$text-color;
     .container-fluid{
         gap: 10px;
         .img-carrusel{
-            //REVISAR SI PUEDO APLICAR MIXINS
-            display: block;
-            width: 100%;
-            margin-top: 20px;
-            border-radius: 5px;
-            border:2px solid black;
+            @include m.carrusel;
         }
     }
     //container de la img con texto
@@ -38,8 +32,8 @@ main{
             align-items: center;
         }
         .grid-item{
-            font-family: "Roboto",sans-serif;
-            font-size: 1.5rem;
+            font-family: v.$main-font;
+            font-size: v.$size-font;
         }   
     }
     .container-grid-link{
@@ -61,7 +55,7 @@ main{
                 width: 100%;
                 background-color: v.$shadow;
                 //POSIBLEMENTE CAMBIAR
-                color: white;
+                color: v.$a-color;
                 text-align: center;
                 padding: 10px 0;
                 font-weight: bold;

@@ -1,102 +1,102 @@
 @use "../base/mixins" as m;
+@use "../base/variables" as v;
+
 // PÁGINA COMPRA
 .compra {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        font-family: "Poppins" sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: v.$main-font;
 
     .container-compra {
         max-width: 1200px;
         text-align: center;
         margin: 0 auto;
         padding: 40px 20px;
-        background-color: #1f242d;
-        h1 {
-            color: #fff;
-        }
-        .container-cards {
-            @include m.container(3,1fr);
+        background-color: v.$backgroud-compra;
+        color: #fff;
+    }
 
-            & img {
-                width: 100%;
-                border-radius: 10px;
-            }
+    .container-cards {
+        @include m.container(3, 1fr);
+
+        & img {
+            width: 100%;
+            border-radius: 10px;
+        }
+    }
+
+    .container-form {
+        display: flex;
+        justify-content: center;
+        margin-top: 50px;
+
+        & form {
+            width: 700px;
+            padding: 40px;
+            background-color: #fff;
+            border-radius: 10px;
         }
 
-        .container-form {
+        .row {
             display: flex;
-            justify-content: center;
-            margin-top: 50px;
+            gap: 15px;
+            flex-wrap: wrap;
 
-            & form {
-                width: 700px;
-                padding: 40px;
-                background-color: #fff;
-                border-radius: 10px;
-            }
+            .column {
+                flex: 1 1 250px;
 
-            .row {
-                display: flex;
-                gap: 15px;
-                flex-wrap: wrap;
-
-                .column {
-                    flex: 1 1 250px;
-
-                    .flex {
-                        display: flex;
-                        gap: 15px;
-
-                        .input-box {
-                            margin-top: 5px;
-                        }
-                    }
-
-                    .title {
-                        font-size: 20px;
-                        color: #333;
-                        text-transform: uppercase;
-                        margin-bottom: 5px;
-                    }
+                .flex {
+                    display: flex;
+                    gap: 15px;
 
                     .input-box {
-                        margin: 15px 0;
-
-                        & input {
-                            width: 100%;
-                            padding: 10px 15px;
-                            border: 1px solid #ccc;
-                            border-radius: 5px;
-                            font-size: 15px;
-                        }
-
-                        .span {
-                            display: block;
-                            margin-bottom: 10px;
-                        }
+                        margin-top: 5px;
                     }
                 }
-            }
 
-            .btn {
-                width: 100%;
-                padding: 12px;
-                background-color: #8175d3;
-                border: none;
-                outline: none;
-                border-radius: 5px;
-                font-size: 15px;
-                color: #fff;
-                margin-top: 5px;
-                cursor: pointer;
-                transition: 0.5s;
+                .title {
+                    font-size: 20px;
+                    color: #333;
+                    text-transform: uppercase;
+                    margin-bottom: 5px;
+                }
 
-                &:hover {
-                    background-color: #6a5acd;
+                .input-box {
+                    margin: 15px 0;
+
+                    & input {
+                        width: 100%;
+                        padding: 10px 15px;
+                        border: 1px solid #ccc;
+                        border-radius: 5px;
+                        font-size: 15px;
+                    }
+
+                    .span {
+                        display: block;
+                        margin-bottom: 10px;
+                    }
                 }
             }
         }
 
+        .btn {
+            width: 100%;
+            padding: 12px;
+            background-color: v.$backgroud-btn;
+            border: none;
+            outline: none;
+            border-radius: 5px;
+            font-size: 15px;
+            color: #fff;
+            margin-top: 5px;
+            cursor: pointer;
+            transition: 0.5s;
+
+            &:hover {
+                background-color: v.$backgroud-btn-sombra;
+            }
+        }
     }
 }

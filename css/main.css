@@ -18,7 +18,7 @@ a {
   color: inherit;
 }
 
-.compra .container-compra .container-cards, .container-grid-sucursales, .container-grid, main .grid-container, main .container-grid-link {
+.compra .container-cards, .container-grid-sucursales, .container-grid, main .grid-container, main .container-grid-link {
   margin-top: 50px;
   gap: 20px;
 }
@@ -125,7 +125,7 @@ footer .text-white .container .payment-methods .d-flex img {
 }
 
 main {
-  background-color: #D8D2C2;
+  background-color: #D4C9BE;
 }
 main .titulo-principal {
   text-align: center;
@@ -267,7 +267,7 @@ main .container-grid-link .img-con-link .link-img:hover {
 }
 .container-grid .card .card-body .button {
   text-align: center;
-  font-size: 16px;
+  font-size: 1.5rem;
   padding: 15px;
   border-radius: 15px;
 }
@@ -299,7 +299,7 @@ main .container-grid-link .img-con-link .link-img:hover {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Poppins" sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 .compra .container-compra {
   max-width: 1200px;
@@ -307,79 +307,77 @@ main .container-grid-link .img-con-link .link-img:hover {
   margin: 0 auto;
   padding: 40px 20px;
   background-color: #1f242d;
-}
-.compra .container-compra h1 {
   color: #fff;
 }
-.compra .container-compra .container-cards {
+.compra .container-cards {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   place-items: center;
   width: 100%;
 }
 @media screen and (max-width: 600px) {
-  .compra .container-compra .container-cards {
+  .compra .container-cards {
     grid-template-columns: 1fr;
     gap: 5px;
   }
 }
 @media screen and (min-width: 601px) and (max-width: 1023px) {
-  .compra .container-compra .container-cards {
+  .compra .container-cards {
     grid-template-columns: repeat(2, 1fr);
     gap: 10px;
   }
 }
-.compra .container-compra .container-cards img {
+.compra .container-cards img {
   width: 100%;
   border-radius: 10px;
 }
-.compra .container-compra .container-form {
+.compra .container-form {
   display: flex;
   justify-content: center;
   margin-top: 50px;
 }
-.compra .container-compra .container-form form {
+.compra .container-form form {
   width: 700px;
   padding: 40px;
   background-color: #fff;
   border-radius: 10px;
 }
-.compra .container-compra .container-form .row {
+.compra .container-form .row {
   display: flex;
   gap: 15px;
   flex-wrap: wrap;
 }
-.compra .container-compra .container-form .row .column {
+.compra .container-form .row .column {
   flex: 1 1 250px;
 }
-.compra .container-compra .container-form .row .column .flex {
+.compra .container-form .row .column .flex {
   display: flex;
   gap: 15px;
 }
-.compra .container-compra .container-form .row .column .flex .input-box {
+.compra .container-form .row .column .flex .input-box {
   margin-top: 5px;
 }
-.compra .container-compra .container-form .row .column .title {
+.compra .container-form .row .column .title {
   font-size: 20px;
   color: #333;
   text-transform: uppercase;
   margin-bottom: 5px;
 }
-.compra .container-compra .container-form .row .column .input-box {
+.compra .container-form .row .column .input-box {
   margin: 15px 0;
 }
-.compra .container-compra .container-form .row .column .input-box input {
+.compra .container-form .row .column .input-box input {
   width: 100%;
   padding: 10px 15px;
   border: 1px solid #ccc;
   border-radius: 5px;
   font-size: 15px;
 }
-.compra .container-compra .container-form .row .column .input-box .span {
+.compra .container-form .row .column .input-box .span {
   display: block;
   margin-bottom: 10px;
 }
-.compra .container-compra .container-form .btn {
+.compra .container-form .btn {
   width: 100%;
   padding: 12px;
   background-color: #8175d3;
@@ -392,7 +390,7 @@ main .container-grid-link .img-con-link .link-img:hover {
   cursor: pointer;
   transition: 0.5s;
 }
-.compra .container-compra .container-form .btn:hover {
+.compra .container-form .btn:hover {
   background-color: #6a5acd;
 }
 

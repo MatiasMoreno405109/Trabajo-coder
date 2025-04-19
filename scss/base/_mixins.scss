@@ -9,18 +9,29 @@
     @if $rows !=null and $rows-size !=null {
         grid-template-rows: repeat($rows, $rows-size);
     }
+
     //EXTEND APLICADO
     place-items: center;
     @extend %margin-box;
     width: 100%;
+
     //MEDIA QUERY PARA MOVILES
-    @media screen and (max-width:600px){
+    @media screen and (max-width:600px) {
         grid-template-columns: 1fr;
         gap: 5px
     }
+
     //MEDIA QUERY PARA TABLETS Y PANTALLAS MEDIANAS
     @media screen and (min-width: 601px) and (max-width: 1023px) {
         grid-template-columns: repeat(2, 1fr);
         gap: 10px;
     }
+}
+
+@mixin carrusel {
+    display: block;
+    width: 100%;
+    margin-top: 20px;
+    border-radius: 5px;
+    border: 2px solid black;
 }
