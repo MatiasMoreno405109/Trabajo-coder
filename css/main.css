@@ -243,7 +243,7 @@ main .container-grid-link .img-con-link .link-img:hover {
 .container-grid .card .card-body ul li .checked {
   color: yellow;
 }
-.container-grid .card .card-body ul li .button {
+.container-grid .card .card-body .button {
   text-align: center;
   font-size: 16px;
   padding: 15px;

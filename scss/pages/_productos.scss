@@ -35,15 +35,15 @@
                     .checked {
                         color: yellow;
                     }
-
-                    //BOTON DE COMPRA
-                    .button {
-                        text-align: center;
-                        font-size: v.$size-font;
-                        padding: 15px;
-                        border-radius: 15px;
-                    }
                 }
+            }
+
+            //BOTON DE COMPRA
+            .button {
+                text-align: center;
+                font-size: v.$size-font;
+                padding: 15px;
+                border-radius: 15px;
             }
 
             .card-title,
