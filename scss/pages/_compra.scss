@@ -14,7 +14,11 @@
         margin: 0 auto;
         padding: 40px 20px;
         background-color: v.$backgroud-compra;
-        color: #fff;
+        color: v.$title-color;
+
+        h3 {
+            color: v.$a-color;
+        }
     }
 
     .container-cards {
@@ -57,7 +61,7 @@
 
                 .title {
                     font-size: 20px;
-                    color: #333;
+                    color: v.$title-color;
                     text-transform: uppercase;
                     margin-bottom: 5px;
                 }

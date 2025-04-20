@@ -307,7 +307,10 @@ main .container-grid-link .img-con-link .link-img:hover {
   margin: 0 auto;
   padding: 40px 20px;
   background-color: #1f242d;
-  color: #fff;
+  color: #333;
+}
+.compra .container-compra h3 {
+  color: white;
 }
 .compra .container-cards {
   display: grid;
