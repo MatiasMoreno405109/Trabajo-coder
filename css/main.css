@@ -31,7 +31,7 @@ a {
   transition: transform 0.3s ease;
 }
 .whatsapp img {
-  width: 5rem;
+  width: 3rem;
   transition: 0.3 ease;
 }
 .whatsapp:hover {
@@ -278,8 +278,20 @@ main .container-grid-link .img-con-link .link-img:hover {
 
 .container-title {
   width: 100%;
-  height: 500px;
+  height: 50vh;
   position: relative;
+}
+@media (min-width: 950px) {
+  .container-title {
+    height: 85vh;
+  }
+  .container-title .titulo-sucursal {
+    font-size: 3.5rem;
+  }
+  .container-title .texto-sucursal {
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+  }
 }
 .container-title .img-titulo {
   width: 100%;
@@ -298,7 +310,7 @@ main .container-grid-link .img-con-link .link-img:hover {
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.9);
 }
 .container-title .texto-superpuesto .titulo-sucursal {
-  font-size: 2.5rem;
+  font-size: 2rem;
   margin-bottom: 10px;
 }
 .container-title .texto-superpuesto .texto-sucursal {
