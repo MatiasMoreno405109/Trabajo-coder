@@ -43,6 +43,18 @@ a {
     width: 3rem;
   }
 }
+.card {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  transition: box-shadow 0.3s ease;
+  background-color: #fff;
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card:hover {
+  transform: translate(0px, -10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+}
+
 @keyframes scroll {
   from {
     transform: translateX(100%);
@@ -248,10 +260,6 @@ main .container-grid-link .img-con-link .link-img:hover {
 }
 .container-grid .card {
   cursor: pointer;
-  transition: 0.4s;
-}
-.container-grid .card:hover {
-  transform: translate(0px, -10px);
 }
 .container-grid .card .card-body ul {
   list-style: none;

@@ -9,11 +9,6 @@
     //CARDS Y VALORACIONES 5 ESTRELLAS
     .card {
         cursor: pointer;
-        transition: .4s;
-
-        &:hover {
-            transform: translate(0px, -10px);
-        }
 
         .card-body {
             ul {
@@ -37,7 +32,7 @@
                     }
                 }
             }
-              
+
             //BOTON DE COMPRA
             .button {
                 text-align: center;
