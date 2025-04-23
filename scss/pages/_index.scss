@@ -10,6 +10,7 @@ main{
         font-weight: 700;
         color: v.$title-color;
         padding-top: 20px;
+        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
     }
     background-color: v.$text-color;
     .container-fluid{
