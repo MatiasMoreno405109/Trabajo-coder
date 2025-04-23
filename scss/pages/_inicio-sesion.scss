@@ -11,11 +11,13 @@
     justify-content: center;
 
     .formulario-login {
-        width: 400px;
+        min-width: 30vw;
         background: v.$a-color;
         border-radius: 10px;
         padding: 30px 40px;
         box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+
+
 
         .titulo-login {
             text-align: center;
@@ -118,3 +120,4 @@
         }
     }
 }
+
